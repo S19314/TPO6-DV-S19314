@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Library S19314</title>
+</head>
+<body>
+<center><h2>Library</h2></center>
+<hr>
+<p> Szukać według <p/>
+<hr>
+<form method="post" action="http://localhost:8080/TPO6_DV_S19314/Library">
+Nazwa książki:<br>
+<input type="text" size="30" name="name_book"><br>
+Autor:<br> <!-- Мб, РАЗДЕЛИТЬ НГА ИМЯ И ФАМИЛИЮ -->
+<input type="text" size="30" name="name_autor"><br>
+Wydawca:<br>
+<input type="text" size="30" name="name_wydawcy"><br>
+Rok:<br>
+<input type="text" size="30" name="rok"><br>
+<pre>Cena od:  		 	Cena do:
+<input type="text" size="30" name="cena_od"> <input type="text" size="30" name="cena_do">
+<pre/>
+<input type="submit" value="Pokaż wynik wyszukiwania">
+</form>
+
+<!-- 
+ISBN char(13) not null,
+        AUTID integer not null,
+        TYTUL varchar(255) not null,
+        WYDID integer not null,
+        ROK integer not null,
+        CENA real,
+        PRIMARY KEY(ISBN),
+        FOREIGN KEY(AUTID) REFERENCES AUTOR(AUTID),
+        FOREIGN KEY(WYDID) REFERENCES WYDAWCA(WYDID)
+ -->   
+
+</body>
+</html>
+
+
+<!-- Вывод информации о книге относительно таблицы Pozycje --> 
