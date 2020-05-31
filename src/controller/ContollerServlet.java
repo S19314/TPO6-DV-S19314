@@ -72,11 +72,13 @@ public class ContollerServlet extends HttpServlet {
 			// if(para,m == null)
 			command.setParameter(parameterNames[i], parameterValue);
 		}
+		// command.setParameter("cena_od", value);
+		
 		Lock mainLock = new ReentrantLock();
 		mainLock.lock();
 		command.execute();
 		List<Object> results = (List)command.getResults();
-		
+		System.out.println("Results " + (results).toString());
 		session.setAttribute("Results", results);
 		session.setAttribute("Lock", mainLock);
 		

@@ -59,6 +59,7 @@ public class ResultPresent extends HttpServlet {
 		 */
 		// String[] dopiski = BundleInfo.getResultDesc
 		// Wydrukowanie tablicy rezultatów
+		if(results.isEmpty()) return;
 		out.println("<ul>");
 		for(Iterator<Object> iterator = results.iterator(); iterator.hasNext(); ){
 			out.println("<li>");
@@ -70,6 +71,8 @@ public class ResultPresent extends HttpServlet {
 				for( i = 0; i < resultArray.length; i++){
 					out.print( resultArray[i]  + " ");
 				}
+			}else{
+				out.print( result  + " ");
 			}
 			out.println("</li>");
 		}

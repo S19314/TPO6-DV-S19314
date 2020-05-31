@@ -14,12 +14,16 @@ public class FindBooksCommand extends CommandImpl implements Serializable {
 		String rok = (String)getParameter("rok");
 		String cena_od = (String)getParameter("cena_od");
 		String cena_do = (String)getParameter("cena_do");
-		
+		/*
 		addResult(name_book);
 		addResult(name_autor); 
 		addResult(name_wydawcy); 
 		addResult(rok); 
 		addResult(cena_od); 
-		addResult(cena_do); 
+		addResult(cena_do);
+		*/
+		addResult("name_book: " + name_book + ", name_wydawcy " + name_wydawcy
+				+ ", rok " + rok + ", cena_od " + cena_od  + ", cena_do  " + cena_do 
+				);
 	}
 }

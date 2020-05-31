@@ -12,8 +12,10 @@ public class LibraryParametersDefinition_pl extends ListResourceBundle {
 		{"parameter_name_wydawcy", "Wydawca"},
 		{"parameter_rok", "Rok"},
 		{"parameter_cena", "Cena"},
-		{"cena_od", "Cena od"},
-		{"cena_do", "Cena do"},
+		 {"parameter_cena_od", "Cena od"},    
+		 {"parameter_cena_do", "Cena do"}, 
+		// {"cena_od", "Cena od"}, // Równieź są parametrami, ale   
+		// {"cena_do", "Cena do"}, // nie biorą udzial w tworzeniu widoku przez cykl
 		{"submit", "Pokaż wynik wyszukiwania"},
 		{"footer", new String[]{}}
 		// {"resCode", new String[]{}}

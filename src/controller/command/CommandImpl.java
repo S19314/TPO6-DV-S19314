@@ -26,6 +26,7 @@ public class CommandImpl implements Serializable, Command {
 		return resultList;
 	}
 	public void addResult(Object result){
+		System.out.println("In CommandImpl, method addResult  " + result.toString());
 		resultList.add(result);
 	}
 

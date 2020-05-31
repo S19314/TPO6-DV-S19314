@@ -35,8 +35,8 @@ public class BundleInfo {
 				else if(key.equals("charset")) charset = resourceBundle.getString(key);
 				else if(key.equals("submit")) submitingMessage = resourceBundle.getString(key);
 				else if(key.equals("title")) title = resourceBundle.getString(key);
-				else if(key.equals("cenaDo")) cenaDo = resourceBundle.getString(key);
-				else if(key.equals("cenaOd")) cenaOd = resourceBundle.getString(key);
+				else if(key.equals("cena_do")) cenaDo = resourceBundle.getString(key);
+				else if(key.equals("cena_od")) cenaOd = resourceBundle.getString(key);
 			}
 			commandParameterNames = (String[])parameterNameList.toArray(new String[0]);
 			commandParameterDescription = (String[])parameterValueList.toArray(new String[0]);			

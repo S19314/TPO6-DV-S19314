@@ -55,19 +55,22 @@ public class GetParameterServlet extends HttpServlet {
     		out.println(headers[i] + "\n");
     	out.println("</h2></center><hr>");
     	
-    	out.println("<form method= \\\"post\\\" >");
+    	out.println("<form method= \"post\" >");
     	for(int  i = 0; i < parameterNames.length; i++){
     		out.println(parametersDescription[i] + "<br>");
-    		out.print("<input type=\\\"text\\\" size=\\\"30\\\" name=\\"
-    					+ parameterNames[i] + "\\\""
+    		out.print("<input type=\"text\" size=\"30\" name=\""
+    					+ parameterNames[i] + "\""
     				);
     		String parameterValue = (String) session.getAttribute("parameter_" + parameterNames[i]);
-    		if(parameterValue != null) out.print(" value=\\\"" + parameterValue + "\\\"");
+    		if(parameterValue != null) out.print(" value=\"" + parameterValue + "\"");
     		out.println("><br>");
     	}
-    	out.println("<pre>" + cena_od + ":  		 	" + cena_do + ":\n" +
-    			" <input type=\\\"text\\\" size=\\\"30\\\" name=\\\"cena_od\\\"> <input type=\\\"text\\\" size=\\\"30\\\" name=\\\"cena_do\\\"><pre/>");
-    	out.println("<br><input type=\\\"submit\\\" value=\\\"" + submitingMessage + "\\\">");
+    	/*
+    	out.println("<pre>" + cena_od + ":  		 	" + cena_do + ":<pre/>" +
+    			" <input type=\"text\" size=\"30\" name=\"cena_od\"> <input type=\"text\" size=\"30\" name=\"cena_do\">");
+    	*/
+    	out.println("<br><input type=\"submit\" value=\"" + submitingMessage + "\">");
+    	
     	out.println("</form>");
     
     	for(int i = 0; i < parameterNames.length; i++ ){
